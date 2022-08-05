@@ -1,0 +1,16 @@
+.multiSelect .selectButton:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.multiSelect .selectButton:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.selectButton {
+  display: inline;
+}
+
+.selectButton.selected {
+  background-color: white;
+  color: #222;
+}
