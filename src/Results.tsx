@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { countryEquals } from "./countries";
 import { QuizUserAnswer } from "./Quiz";
 import { ResultsRow } from "./ResultsRow";
 import { Button } from "./styles";
@@ -19,7 +20,7 @@ export default function Results(props: ResultsProps) {
   for (let ans of props.answers) {
     rows.push(<ResultsRow key={ans.correct_answer.code} answer={ans}></ResultsRow>);
 
-    score += (ans.correct_answer.code===ans.user_answer.code)?1:0;
+    score += countryEquals(ans.correct_answer, ans.user_answer)?1:0;
   }
   
   return (

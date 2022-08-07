@@ -25,11 +25,11 @@ export function ResultsRow(props: ResultsRowProps) {
     <TableRow answer={props.answer}>
       <TableCell>
         {props.answer.user_answer.name}
-        <SmallFlagImage src={"/flags/" + props.answer.user_answer.code + ".svg"}/>
+        <SmallFlagImage src={"flags/" + props.answer.user_answer.code + ".svg"}/>
       </TableCell>
       <TableCell>
         {props.answer.correct_answer.name}
-        <SmallFlagImage src={"/flags/" + props.answer.correct_answer.code + ".svg"}/>
+        <SmallFlagImage src={"flags/" + props.answer.correct_answer.code + ".svg"}/>
       </TableCell>
     </TableRow>
   );

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Country, countryEquals, genCountry, genCountryEasy } from "./countries";
+import { Country, genCountry, genCountryEasy } from "./countries";
 import QuizQuestion from "./QuizQuestion";
 
 const NUMBER_OF_QUESTIONS = 10;
@@ -21,13 +21,11 @@ export default function Quiz(props: QuizProps) {
       answersPerQuestion = 8;
       break;
     case 2: //Hard
-      answersPerQuestion = 16;
+      answersPerQuestion = 1; //Only the right answer is needed.
       break;
-    default:
+    default: //Easy by default
       answersPerQuestion = 4;
   }
-
-  console.log(props.difficulty);
 
   let [quiz, _setQuiz] = useState(generateQuiz(NUMBER_OF_QUESTIONS, answersPerQuestion, props.difficulty===0));
   let [currentQ, setCurrentQ] = useState(0);
@@ -40,7 +38,7 @@ export default function Quiz(props: QuizProps) {
     }
     let newSelected = [];
     for (let i = 0; i < selectedAnswers.length; i++) {
-      if (i == index) {
+      if (i === index) {
         newSelected.push(answer);
       } else {
         newSelected.push(selectedAnswers[i]);
@@ -59,7 +57,7 @@ export default function Quiz(props: QuizProps) {
   let questionElements: JSX.Element[] = [];
   for (let i = 0; i < quiz.length; i++) {
     let q = quiz[i];
-    questionElements.push(<QuizQuestion question={q} key={i} onSubmit={country=>{questionSubmit(i, country)}}></QuizQuestion>);
+    questionElements.push(<QuizQuestion textEntry={props.difficulty===2} question={q} key={i} onSubmit={country=>{questionSubmit(i, country)}}></QuizQuestion>);
   };
 
   return (

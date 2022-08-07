@@ -10,8 +10,8 @@ export function countryEquals(a: Country, b: Country) {
 }
 
 export function genCountry(): CountryJSON {
-  let index = Math.floor(Math.random()*countries.length);
-  let country = countries[index];
+  let index = Math.floor(Math.random()*worldCountries.length);
+  let country = worldCountries[index];
   return country;
 }
 
@@ -31,7 +31,7 @@ interface CountryJSON {
   gdpRank?: number
 }
 
-let countries: CountryJSON[] = [
+export const worldCountries: CountryJSON[] = [
   {
     "code": "ac",
     "continent": "Africa",
@@ -328,7 +328,7 @@ let countries: CountryJSON[] = [
     "code": "ci",
     "continent": "Africa",
     "iso": true,
-    "name": "Côte d'Ivoire",
+    "name": "Ivory Coast",
     "gdpRank": 78
   },
   {
@@ -384,7 +384,7 @@ let countries: CountryJSON[] = [
     "code": "cv",
     "continent": "Africa",
     "iso": true,
-    "name": "Cabo Verde",
+    "name": "Cape Verde",
     "gdpRank": 184
   },
   {
@@ -1031,12 +1031,6 @@ let countries: CountryJSON[] = [
     "gdpRank": 161
   },
   {
-    "code": "mf",
-    "continent": "North America",
-    "iso": true,
-    "name": "Saint Martin"
-  },
-  {
     "code": "mg",
     "continent": "Africa",
     "iso": true,
@@ -1200,7 +1194,7 @@ let countries: CountryJSON[] = [
     "code": "nl",
     "continent": "Europe",
     "iso": true,
-    "name": "Netherlands",
+    "name": "Netherlands (Holland)",
     "gdpRank": 18
   },
   {
@@ -1310,7 +1304,7 @@ let countries: CountryJSON[] = [
     "code": "ps",
     "continent": "Asia",
     "iso": true,
-    "name": "State of Palestine",
+    "name": "Palestine",
     "gdpRank": 122
   },
   {
