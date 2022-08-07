@@ -13,4 +13,5 @@ export const Button = styled.button`
   margin: 0.25em;
   cursor: pointer;
   font-weight: bolder;
+  word-wrap: normal;
 `;

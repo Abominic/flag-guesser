@@ -15,6 +15,9 @@ const AnswerButtonContainer = styled.ol`
 
 const AnswerButton = styled(Button)`
   width: 15vw;
+  @media (max-width: 768px) {
+    width: 30vw;
+  }
 `;
 
 export default function AnswerButtons(props: AnswerButtonsProps) {

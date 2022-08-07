@@ -13,6 +13,9 @@ interface QuizQuestionProps {
 
 const FlagImage = styled.img`
   width: 15vw;
+  @media (max-width: 768px) {
+    width: 30vw;
+  }
 `;
 
 export default function QuizQuestion(props: QuizQuestionProps) {
