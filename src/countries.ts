@@ -32,12 +32,12 @@ interface CountryJSON {
 }
 
 export const worldCountries: CountryJSON[] = [
-  {
-    "code": "ac",
-    "continent": "Africa",
-    "iso": false,
-    "name": "Ascension Island"
-  },
+  // {
+  //   "code": "ac",
+  //   "continent": "Africa",
+  //   "iso": false,
+  //   "name": "Ascension Island"
+  // },
   {
     "code": "ad",
     "continent": "Europe",
@@ -252,11 +252,11 @@ export const worldCountries: CountryJSON[] = [
     "name": "Bhutan",
     "gdpRank": 177
   },
-  {
-    "code": "bv",
-    "iso": true,
-    "name": "Bouvet Island"
-  },
+  // {
+  //   "code": "bv",
+  //   "iso": true,
+  //   "name": "Bouvet Island"
+  // },
   {
     "code": "bw",
     "continent": "Africa",
@@ -421,11 +421,11 @@ export const worldCountries: CountryJSON[] = [
     "name": "Germany",
     "gdpRank": 3
   },
-  {
-    "code": "dg",
-    "iso": false,
-    "name": "Diego Garcia"
-  },
+  // {
+  //   "code": "dg",
+  //   "iso": false,
+  //   "name": "Diego Garcia"
+  // },
   {
     "code": "dj",
     "continent": "Africa",
@@ -461,11 +461,11 @@ export const worldCountries: CountryJSON[] = [
     "name": "Algeria",
     "gdpRank": 57
   },
-  {
-    "code": "ea",
-    "iso": false,
-    "name": "Ceuta & Melilla"
-  },
+  // {
+  //   "code": "ea",
+  //   "iso": false,
+  //   "name": "Ceuta & Melilla"
+  // },
   {
     "code": "ec",
     "continent": "South America",
@@ -674,12 +674,12 @@ export const worldCountries: CountryJSON[] = [
     "name": "Greece",
     "gdpRank": 53
   },
-  {
-    "code": "gs",
-    "continent": "Antarctica",
-    "iso": true,
-    "name": "South Georgia and the South Sandwich Islands"
-  },
+  // {
+  //   "code": "gs",
+  //   "continent": "Antarctica",
+  //   "iso": true,
+  //   "name": "South Georgia and the South Sandwich Islands"
+  // },
   {
     "code": "gt",
     "continent": "North America",
@@ -715,11 +715,11 @@ export const worldCountries: CountryJSON[] = [
     "name": "Hong Kong",
     "gdpRank": 41
   },
-  {
-    "code": "hm",
-    "iso": true,
-    "name": "Heard Island and McDonald Islands"
-  },
+  // {
+  //   "code": "hm",
+  //   "iso": true,
+  //   "name": "Heard Island and McDonald Islands"
+  // },
   {
     "code": "hn",
     "continent": "North America",
@@ -911,13 +911,13 @@ export const worldCountries: CountryJSON[] = [
     "name": "Kuwait",
     "gdpRank": 58
   },
-  {
-    "code": "ky",
-    "continent": "North America",
-    "iso": true,
-    "name": "Cayman Islands",
-    "gdpRank": 160
-  },
+  // {
+  //   "code": "ky",
+  //   "continent": "North America",
+  //   "iso": true,
+  //   "name": "Cayman Islands",
+  //   "gdpRank": 160
+  // },
   {
     "code": "kz",
     "continent": "Asia",
@@ -1093,13 +1093,13 @@ export const worldCountries: CountryJSON[] = [
     "name": "Mauritania",
     "gdpRank": 152
   },
-  {
-    "code": "ms",
-    "continent": "North America",
-    "iso": true,
-    "name": "Montserrat",
-    "gdpRank": 214
-  },
+  // {
+  //   "code": "ms",
+  //   "continent": "North America",
+  //   "iso": true,
+  //   "name": "Montserrat",
+  //   "gdpRank": 214
+  // },
   {
     "code": "mt",
     "continent": "Europe",
@@ -1287,12 +1287,12 @@ export const worldCountries: CountryJSON[] = [
     "name": "Poland",
     "gdpRank": 21
   },
-  {
-    "code": "pn",
-    "continent": "Oceania",
-    "iso": true,
-    "name": "Pitcairn"
-  },
+  // {
+  //   "code": "pn",
+  //   "continent": "Oceania",
+  //   "iso": true,
+  //   "name": "Pitcairn"
+  // },
   {
     "code": "pr",
     "continent": "North America",
@@ -1405,12 +1405,12 @@ export const worldCountries: CountryJSON[] = [
     "name": "Singapore",
     "gdpRank": 36
   },
-  {
-    "code": "sh",
-    "continent": "Africa",
-    "iso": true,
-    "name": "Saint Helena, Ascension and Tristan da Cunha"
-  },
+  // {
+  //   "code": "sh",
+  //   "continent": "Africa",
+  //   "iso": true,
+  //   "name": "Saint Helena, Ascension and Tristan da Cunha"
+  // },
   {
     "code": "si",
     "continent": "Europe",
@@ -1507,18 +1507,18 @@ export const worldCountries: CountryJSON[] = [
     "name": "Eswatini",
     "gdpRank": 168
   },
-  {
-    "code": "ta",
-    "iso": false,
-    "name": "Tristan da Cunha"
-  },
-  {
-    "code": "tc",
-    "continent": "North America",
-    "iso": true,
-    "name": "Turks and Caicos Islands",
-    "gdpRank": 200
-  },
+  // {
+  //   "code": "ta",
+  //   "iso": false,
+  //   "name": "Tristan da Cunha"
+  // },
+  // {
+  //   "code": "tc",
+  //   "continent": "North America",
+  //   "iso": true,
+  //   "name": "Turks and Caicos Islands",
+  //   "gdpRank": 200
+  // },
   {
     "code": "td",
     "continent": "Africa",
